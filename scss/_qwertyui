@@ -1,28 +1,6 @@
 
     
 
-        
+
+                
     
-    
-        
-        .contacts {
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            
-        }
-    
-        .contacts__item:not(:last-child) {
-            margin-right: 50px;
-        }
-    
-    
-        .contacts__link {
-        @extend %flex;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        }
-    
-        .contacts__icon {
-            margin-right: 10px;
-        }

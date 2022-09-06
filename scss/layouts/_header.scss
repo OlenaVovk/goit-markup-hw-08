@@ -15,6 +15,7 @@
     }
 }
 
+
 .header__container {
     display: flex;
     align-items: center;
@@ -24,6 +25,16 @@
 .site-nav,
 .contacts {
     display: none;
+}
+
+.mobile-button {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    line-height: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,6 +73,7 @@
         padding-bottom: 7px;
         color: var(--title-text-color);
         transition: color 250ms var(--primary-timing-function);
+        outline: 2px solid blue;
     
         &.current,
         &:hover,
@@ -71,7 +83,7 @@
     
         &.current::after {
             position: absolute;
-            top: 54px;
+            top: 56px;
             content: "";
             display: block;
             @include format (100%, 4px);
@@ -86,6 +98,7 @@
 
     .contacts__link {
         color: inherit;
+        outline: 2px solid blue;
         transition: color 250ms var(--primary-timing-function);
     
         &:hover,
@@ -98,6 +111,7 @@
         fill: var(--primary-text-color);
         margin-right: 8px;
         transition: fill 250ms var(--primary-timing-function);
+        outline: 2px solid violet;
 
         .contacts__link:hover & {
         fill: var(--accent-color);
@@ -106,24 +120,27 @@
 }
 
 @media screen and (min-width: 1200px) {
-    
+
+    .site-nav__link.current::after {
+            position: absolute;
+            top: 52px;
+    }
+
     .contacts {
         display: flex;
         align-items: center;
         margin-left: auto;
     }
 
-        .contacts__item:first-child {
-            margin-bottom: 0;
-        }
-    
     .contacts__item:not(:last-child) {
         margin-right: 50px;
+        margin-bottom: 0;
     }
     
-    
     .contacts__link {
-        @extend %flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding-top: 7px;
         padding-bottom: 7px;
     }
@@ -131,8 +148,6 @@
     .contacts__icon {
         margin-right: 10px;
     }
-
-
 
 }
 
