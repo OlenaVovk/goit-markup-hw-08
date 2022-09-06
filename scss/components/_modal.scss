@@ -1,0 +1,32 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include format (528px, 581px);
+    padding: 40px;
+    background-color: var(--secondary-accent-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+}
+
+.modal__button {
+    @extend %flex;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @include format (30px, 30px);
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-accent-color);
+    cursor: pointer;
+    transition: fill 250ms var(--primary-timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+

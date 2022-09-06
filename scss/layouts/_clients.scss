@@ -1,0 +1,31 @@
+.clients__list {
+    justify-content: space-between;
+}
+
+.clients__link {
+    @extend %flex;
+    @include format (170px, 92px);
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    transition: border 250ms var(--primary-timing-function);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.clients__icon {
+    fill: var(--icon-color);
+    transition: fill 250ms var(--primary-timing-function);
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--accent-color);
+        }
+}
+
+
+

@@ -1,0 +1,36 @@
+
+body {
+    font-family: var(--primary-text-family);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.activities__list,
+.team__list,
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+}
