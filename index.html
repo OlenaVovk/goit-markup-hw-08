@@ -49,19 +49,26 @@
                 </a>
             </li>
         </ul>
-    </div>
+        <button class="mobile-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40px" height="40px">
+                <use class="icon-cross"></use>
+                <use class="icon-menu"></use>
+            </svg>
+        </button>
+    
 </header>
 
-<main>
+<!-- <main>
 
     <section class="hero">
         <div class="container">
             <h1 class="hero__main">Ефективні рішення для вашого бізнесу</h1>
             <button class="button hero__button" type="button" data-modal-open>Замовити послугу</button>
         </div>
-    </section>
+    </section> -->
 
-    <section class="characteristic">
+<!-- 
+   <section class="characteristic">
         <div class="container">
             <h2 class="visually-hidden">Особливості</h2>
             <ul class="characteristic__list">
@@ -491,8 +498,30 @@
 
 
 
+@import './components/button';
+@import './components/social-networks';
+
+@import './components/backdrop';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/submit-form';
+
+
+@import './layouts/hero';
+@import './layouts/characteristic';
+@import './layouts/activities';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+
+@import './layouts/buttons-list';
+@import './layouts/example-list';
+
+-->
+
 
 
 <script src="./js/modal.js"></script>
 </body>
 </html>
+

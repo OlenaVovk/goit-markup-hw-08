@@ -1,88 +1,141 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid var(--border-bottom-color);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    outline: 2px solid red;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 .header__container {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
 }
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    background: var(--secondary-accent-color);
-}
-
 
 .site-nav,
 .contacts {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    display: none;
 }
 
-.site-nav__item:not(:last-child) {
-    margin-right: 50px;
-}
+@media screen and (min-width: 768px) {
 
-.site-nav__link {
-    position: relative;
-    display: block;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    color: var(--title-text-color);
-    transition: color 250ms var(--primary-timing-function);
-
-    &.current,
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
+    .mobile-button {
+        display: none;
     }
 
-    &.current::after {
-        position: absolute;
-        top: 52px;
-        content: "";
+    .header-nav {
+        display: flex;
+        align-items: center;
+        background: var(--secondary-accent-color);
+    }
+
+    .site-nav,
+    .contacts {
         display: block;
-        @include format (100%, 4px);
-        border-radius: 2px;
-        background-color: var(--accent-color);
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
     }
-}
 
-.contacts {
-    margin-left: auto;
-}
+    .site-nav {
+        display: flex;
+        align-items: center;
+    }
 
-.contacts__item:not(:last-child) {
-    margin-right: 50px;
-}
-
-
-.contacts__link {
-    @extend %flex;
-    color: inherit;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    transition: color 250ms var(--primary-timing-function);
+    .site-nav__item:not(:last-child) {
+         margin-right: 50px;
+    }
     
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
+    .site-nav__link {
+        position: relative;
+        display: block;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        color: var(--title-text-color);
+        transition: color 250ms var(--primary-timing-function);
+    
+        &.current,
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    
+        &.current::after {
+            position: absolute;
+            top: 54px;
+            content: "";
+            display: block;
+            @include format (100%, 4px);
+            border-radius: 2px;
+            background-color: var(--accent-color);
+        }
     }
-}
 
-.contacts__icon {
-    fill: var(--primary-text-color);
-    margin-right: 10px;
-    transition: fill 250ms var(--primary-timing-function);
+    .contacts__item:first-child {
+        margin-bottom: 10px;
+    }
 
-    .contacts__link:hover & {
+    .contacts__link {
+        color: inherit;
+        transition: color 250ms var(--primary-timing-function);
+    
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+
+    .contacts__icon {
+        fill: var(--primary-text-color);
+        margin-right: 8px;
+        transition: fill 250ms var(--primary-timing-function);
+
+        .contacts__link:hover & {
         fill: var(--accent-color);
+        }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    
+    .contacts {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+        .contacts__item:first-child {
+            margin-bottom: 0;
+        }
+    
+    .contacts__item:not(:last-child) {
+        margin-right: 50px;
+    }
+    
+    
+    .contacts__link {
+        @extend %flex;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    
+    .contacts__icon {
+        margin-right: 10px;
+    }
+
+
+
+}
+
+
+
+
