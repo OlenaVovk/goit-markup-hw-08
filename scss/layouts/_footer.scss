@@ -1,32 +1,17 @@
-/*.footer {
+.footer {
     background-color: var(--footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.footer__container {
-    display: flex;
-    align-items: baseline;
-
-}
-
-.footer__nav {
-    margin-right: 70px;
-}
-
 .footer__logo {
     display: inline-block;
     margin-bottom: 20px;
-
 }
 
 .address-list {
     font-style: normal;
     line-height: 1.71;
-}
-
-.address-list__item:not(:last-child) {
-    margin-bottom: 9px;
 }
 
 .address-list__link-fact {
@@ -44,7 +29,7 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
-        }
+    }
 }
 
 .address-list__link-tel {
@@ -53,17 +38,16 @@
     font-style: normal;
     transition: color 250ms var(--primary-timing-function);
 
-    
+
     &:hover,
     &:focus {
         color: var(--accent-color);
-        }
+    }
 }
 
 .footer__social-networks {
-    min-width: 206px;
-    min-height: 80px;
-    margin-right: auto;
+    width: 206px;
+    height: 80px;
 }
 
 .footer__title {
@@ -71,3 +55,109 @@
     color: var(--secondary-accent-color);
 }
 
+    
+@media screen and (max-width: 1199px) {
+    .footer__nav,
+    .footer__social-networks {
+        margin-bottom: 60px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+
+    outline: 1px solid palegreen;
+    }
+
+    .footer__nav {
+        width: 232px;
+        height: 127px;
+    }
+
+    .address-list {
+        text-align: center;
+    }
+
+    .footer__title {
+        text-align: center;
+    }
+
+    .address-list__item:not(:last-child) {
+       margin-bottom: 8px;
+    }
+
+    .footer__submit-form-input {
+        margin-bottom: 20px;
+    }
+  
+    .submit-form__button {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__submit-form-input {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .footer__submit-form-input {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    } 
+
+    .footer__logo {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .footer__submit-form {
+        margin-left: 166px;
+    outline: 1px solid fuchsia;
+    }   
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .footer__nav,
+        .footer__social-networks {
+            outline: 1px solid palegreen;
+    }
+
+    .footer__container {
+        flex-wrap: nowrap;
+    }
+
+    .footer__nav {
+        height: 132px;
+        margin-right: 70px;
+    }
+    
+    .address-list__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    .footer__submit-form {
+        margin-left: auto;
+        outline: 1px solid fuchsia;
+    }
+
+    .footer__submit-form-input {
+        width: 358px;
+        margin-right: 12px;
+    }
+}
+
+
+    
+   
+     
