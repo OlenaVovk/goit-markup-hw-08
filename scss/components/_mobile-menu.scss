@@ -22,7 +22,7 @@
                 0px 2px 4px rgba(0, 0, 0, 0.08), 
                 0px 1px 3px rgba(0, 0, 0, 0.16);
     z-index: 100;
-    transform: translateY(-120%);
+    transform: translateY(-110%);
     transition: transform 250ms var(--primary-timing-function);
 
     @media screen and (max-width:400px) {
@@ -32,7 +32,7 @@
 
 .mobile-menu__container.is-open {
     display: block;
-    transform: translateY(0%);
+    transform: translateY(-1%);
 }
 
 .mobile-menu__button-close {
@@ -111,6 +111,11 @@
     padding-left: 10px;
 }
 
+@media screen and (max-width: 399px) {
+    .mobile-menu__point:first-child {
+        margin-bottom: 10px;
+    }
+}
 
 @media screen and (min-width: 768px) {
 
