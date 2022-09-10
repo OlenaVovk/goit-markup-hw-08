@@ -94,7 +94,6 @@ section {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid teal;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -183,10 +182,6 @@ section {
   background-color: transparent;
   line-height: 0;
   cursor: pointer;
-}
-
-.header__container {
-  position: relative;
 }
 
 .mobile-menu__container {
@@ -676,7 +671,6 @@ section {
   border-bottom: 1px solid var(--border-bottom-color);
   padding-top: 10px;
   padding-bottom: 10px;
-  outline: 2px solid red;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -692,6 +686,7 @@ section {
 }
 
 .header__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -744,7 +739,6 @@ section {
     color: var(--title-text-color);
     -webkit-transition: color 250ms var(--primary-timing-function);
     transition: color 250ms var(--primary-timing-function);
-    outline: 2px solid blue;
   }
   .site-nav__link.current, .site-nav__link:hover, .site-nav__link:focus {
     color: var(--accent-color);
@@ -764,7 +758,6 @@ section {
   }
   .contacts__link {
     color: inherit;
-    outline: 2px solid blue;
     -webkit-transition: color 250ms var(--primary-timing-function);
     transition: color 250ms var(--primary-timing-function);
   }
@@ -776,7 +769,6 @@ section {
     margin-right: 8px;
     -webkit-transition: fill 250ms var(--primary-timing-function);
     transition: fill 250ms var(--primary-timing-function);
-    outline: 2px solid violet;
   }
   .contacts__link:hover .contacts__icon {
     fill: var(--accent-color);
@@ -847,7 +839,6 @@ section {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  outline: 1px solid violet;
 }
 @media screen and (min-width: 480px) {
   .hero__main {
@@ -899,15 +890,10 @@ section {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop@2x.jpg);
   }
 }
-.characteristic__container {
-  outline: 1px solid pink;
-}
-
 .characteristic__icon-container {
   height: 120px;
   background-color: var(--accent-section-color);
   margin-bottom: 30px;
-  outline: 1px solid olive;
 }
 @media screen and (min-width: 480px) {
   .characteristic__icon-container {
@@ -1054,7 +1040,6 @@ section {
 .people-card__social-networks {
   padding-left: 122px;
   padding-right: 122px;
-  outline: 1px solid yellow;
 }
 
 .people-card__icon {
@@ -1228,7 +1213,6 @@ section {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    outline: 1px solid palegreen;
   }
   .footer__nav {
     width: 232px;
@@ -1281,14 +1265,9 @@ section {
   }
   .footer__submit-form {
     margin-left: 166px;
-    outline: 1px solid fuchsia;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__nav,
-.footer__social-networks {
-    outline: 1px solid palegreen;
-  }
   .footer__container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1302,7 +1281,6 @@ section {
   }
   .footer__submit-form {
     margin-left: auto;
-    outline: 1px solid fuchsia;
   }
   .footer__submit-form-input {
     width: 358px;

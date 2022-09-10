@@ -63,8 +63,6 @@
         margin-right: auto;
         margin-left: auto;
         text-align: center;
-
-    outline: 1px solid palegreen;
     }
 
     .footer__nav {
@@ -122,17 +120,11 @@
 
     .footer__submit-form {
         margin-left: 166px;
-    outline: 1px solid fuchsia;
     }   
 }
 
 @media screen and (min-width: 1200px) {
-    
-    .footer__nav,
-        .footer__social-networks {
-            outline: 1px solid palegreen;
-    }
-
+   
     .footer__container {
         flex-wrap: nowrap;
     }
@@ -148,7 +140,6 @@
 
     .footer__submit-form {
         margin-left: auto;
-        outline: 1px solid fuchsia;
     }
 
     .footer__submit-form-input {
