@@ -51,13 +51,19 @@
         </ul>
         
         <div class="mobile-menu">
-            <button class="mobile-menu__button " type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <button class="mobile-menu__button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="40px" height="40px">
-                    <use class="mobile-menu__icon-menu js-open-menu" href="./images/icons.svg#icon-menu"></use>
-                    <use class="mobile-menu__icon-close js-close-menu" href="./images/icons.svg#close-icon"></use>
+                    <use class="mobile-menu__icon-menu" href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
+
             <div class="mobile-menu__container js-menu-container" id="menu-container" >
+
+                <button class="mobile-menu__button-close js-close-menu" type="button">
+                    <svg width="40px" height="40px">  
+                        <use class="mobile-menu__icon-close" href="./images/icons.svg#close-icon"></use>
+                    </svg>
+                </button>
 
                 <ul class="mobile-menu__navigation">
                     <li class="mobile-menu__item">
@@ -97,7 +103,7 @@
                 </ul>
             </div>
         </div>
-   
+    </div>
 </header>
 
  <main>
