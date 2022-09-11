@@ -128,6 +128,10 @@
 
 .policy-link {
     color: var(--accent-color);
+
+   @media screen and (max-width: 435px) {
+    margin-top: 5px;
+   }
 }
 
 .modal-form__button {
